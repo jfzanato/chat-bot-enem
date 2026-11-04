@@ -104,3 +104,6 @@
 /* O GIF conserva apenas seu movimento original, sem salto aplicado pelo site. */
 .character>img,.character:hover>img{width:100%;height:100%;object-fit:contain;animation:none!important;transform:none;transition:none;filter:none}
 .character-note,.character:hover .character-note{animation:none;transform:rotate(6deg);transition:none}
+
+/* Transparencia nativa do GIF, sem mesclar as cores do personagem. */
+.character>img{mix-blend-mode:normal}
