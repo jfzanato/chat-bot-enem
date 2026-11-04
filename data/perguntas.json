@@ -1,0 +1,56 @@
+{
+  "edition": 2026,
+  "reviewedAt": "2026-11-04",
+  "validUntil": "2026-12-31",
+  "messages": {
+    "welcome": "Oi! Sou seu ajudante do Enem. 👋\nVamos tirar uma dúvida? Minhas respostas são cadastradas e têm fonte oficial para você conferir.",
+    "menu": "Por onde vamos começar? Escolha um assunto:",
+    "choose": "Escolha a pergunta que você quer consultar:",
+    "results": "Encontrei estas perguntas na minha base. Qual delas corresponde à sua dúvida?",
+    "unknown": "Ainda não tenho uma resposta cadastrada para essa dúvida. Escolha um dos assuntos ou consulte a Página do Participante pelo link no topo."
+  },
+  "categories": [
+    {"id":"dia", "label":"📅 Datas e horários"},
+    {"id":"levar", "label":"🎒 O que levar"},
+    {"id":"regras", "label":"📵 Durante a prova"},
+    {"id":"provas", "label":"✍️ Provas e redação"},
+    {"id":"inscricao", "label":"📋 Inscrição e atendimento"},
+    {"id":"notas", "label":"🎓 Para que serve a nota"}
+  ],
+  "sources": {
+    "cronograma": {"title":"Inep · cronograma 2026", "url":"https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/orientacoes/cronograma"},
+    "orientacoes": {"title":"Inep · horários, provas e documentos", "url":"https://www.gov.br/inep/pt-br/centrais-de-conteudo/noticias/enem/enem-2026-falta-um-mes-para-o-primeiro-dia-de-provas"},
+    "obrigacoes": {"title":"Inep · obrigações do participante", "url":"https://www.gov.br/inep/pt-br/acesso-a-informacao/perguntas-frequentes/exame-nacional-do-ensino-medio-enem/no-dia-do-exame-orientacoes/obrigacoes-do-participante-do-enem"},
+    "redacao": {"title":"Inep · orientações da redação 2026", "url":"https://www.gov.br/inep/pt-br/centrais-de-conteudo/noticias/enem/enem-2026-cartilha-da-redacao-esta-disponivel"},
+    "faq": {"title":"Inep · perguntas frequentes do Enem", "url":"https://www.gov.br/inep/pt-br/acesso-a-informacao/perguntas-frequentes/exame-nacional-do-ensino-medio-enem/"},
+    "apresentacao": {"title":"Inep · sobre o Enem", "url":"https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/"}
+  },
+  "questions": [
+    {"id":"datas", "category":"dia", "question":"Em quais dias acontece o Enem 2026?", "answer":"A aplicação regular está marcada para 8 e 15 de novembro de 2026.", "keywords":["datas","quando","calendário","dias","novembro"], "source":"cronograma"},
+    {"id":"portoes", "category":"dia", "question":"Que horas os portões abrem e fecham?", "answer":"Nos dois dias: abertura às 12h e fechamento às 13h, pelo horário de Brasília. As provas começam às 13h30.", "keywords":["horário","portões","abre","fecha","atraso","atrasado","início"], "source":"orientacoes"},
+    {"id":"duracao", "category":"dia", "question":"Quanto tempo dura a prova?", "answer":"No tempo regular: 5h30 no primeiro dia, com término às 19h; 5h no segundo, com término às 18h30. Horário de Brasília.", "keywords":["tempo","duração","termina","fim","horas"], "source":"orientacoes"},
+    {"id":"local", "category":"dia", "question":"Onde consulto meu local de prova?", "answer":"Confira a confirmação da inscrição e o local de aplicação na Página do Participante: enem.inep.gov.br/participante. Faça essa consulta com antecedência.", "keywords":["local","endereço","escola","sala","cartão","confirmação"], "source":"obrigacoes"},
+    {"id":"documentos", "category":"levar", "question":"Qual documento de identificação posso levar?", "answer":"Entre os documentos aceitos estão RG, CIN, CNH e passaporte. A lista completa de documentos válidos está na fonte oficial abaixo.", "keywords":["documento","identidade","rg","cnh","cin","passaporte","identificação"], "source":"orientacoes"},
+    {"id":"digital", "category":"levar", "question":"Posso apresentar documento digital?", "answer":"Sim. O Inep informa a aceitação de CIN e documentos digitais como e-Título, CNH e RG por meio do aplicativo Gov.br. Confira as orientações oficiais antes da prova.", "keywords":["digital","aplicativo","gov","título","documento","celular"], "source":"orientacoes"},
+    {"id":"caneta", "category":"levar", "question":"Qual caneta devo usar?", "answer":"Use caneta esferográfica de tinta preta e corpo transparente para preencher as respostas e a redação.", "keywords":["caneta","preta","azul","transparente","tinta","material"], "source":"obrigacoes"},
+    {"id":"lanche", "category":"levar", "question":"Posso levar lanche e medicamentos?", "answer":"As orientações preveem lanche e medicamentos, que devem ser apresentados para vistoria do chefe de sala.", "keywords":["lanche","comida","comer","alimento","medicamento","remédio"], "source":"obrigacoes"},
+    {"id":"declaracao", "category":"levar", "question":"Como comprovo que compareci ao exame?", "answer":"Se precisar comprovar presença, apresente a Declaração de Comparecimento impressa ao chefe de sala, na porta da sala, em cada dia de aplicação.", "keywords":["declaração","comparecimento","presença","trabalho","comprovante"], "source":"obrigacoes"},
+    {"id":"celular", "category":"regras", "question":"O que faço com o celular durante a prova?", "answer":"Desligue o aparelho e desative os alarmes. Guarde-o no envelope porta-objetos, lacrado e identificado, até a saída definitiva do local. Mantenha o envelope debaixo da carteira.", "keywords":["celular","telefone","alarme","envelope","eletrônico","desligar"], "source":"obrigacoes"},
+    {"id":"objetos", "category":"regras", "question":"Posso usar relógio, lápis ou calculadora?", "answer":"Relógios de qualquer tipo, lápis, borracha e calculadoras devem ficar guardados no envelope porta-objetos. Consulte a lista completa de objetos na fonte.", "keywords":["relógio","lápis","borracha","calculadora","proibido","objetos","boné"], "source":"obrigacoes"},
+    {"id":"saida", "category":"regras", "question":"Quando posso sair da sala em definitivo?", "answer":"Somente depois de duas horas do início da prova. Os três últimos participantes saem juntos após a assinatura da ata, exceto nas salas de atendimento especializado.", "keywords":["sair","saída","embora","mínimo","permanência"], "source":"obrigacoes"},
+    {"id":"caderno", "category":"regras", "question":"Posso levar o caderno de questões para casa?", "answer":"Sim, se sair em definitivo nos últimos 30 minutos da prova. Entregue os demais materiais exigidos ao chefe de sala.", "keywords":["caderno","questões","levar","casa","trinta","minutos"], "source":"obrigacoes"},
+    {"id":"estrutura", "category":"provas", "question":"Quantas questões tem o Enem?", "answer":"São 180 questões objetivas, distribuídas em quatro áreas do conhecimento, e uma redação.", "keywords":["quantas","quantidade","questões","estrutura","180"], "source":"apresentacao"},
+    {"id":"materias", "category":"provas", "question":"Quais matérias caem em cada dia?", "answer":"Primeiro dia: Linguagens, Ciências Humanas e Redação. Segundo dia: Ciências da Natureza e Matemática.", "keywords":["matérias","disciplinas","primeiro","segundo","humanas","natureza","matemática","linguagens"], "source":"orientacoes"},
+    {"id":"texto", "category":"provas", "question":"Como deve ser o texto da redação?", "answer":"Um texto dissertativo-argumentativo de até 30 linhas, sobre o tema proposto, apoiado nos textos motivadores e nos seus conhecimentos.", "keywords":["redação","texto","linhas","formato","dissertativo","argumentativo"], "source":"redacao"},
+    {"id":"competencias", "category":"provas", "question":"O que é avaliado na redação?", "answer":"Cinco competências: escrita formal; compreensão do tema; organização de argumentos; mecanismos linguísticos de argumentação; e proposta de intervenção que respeite os direitos humanos.", "keywords":["redação","competências","critérios","avaliação","intervenção"], "source":"redacao"},
+    {"id":"zero", "category":"provas", "question":"O que pode zerar a redação?", "answer":"Entre as situações previstas estão fugir ao tema, escrever até sete linhas, inserir trecho deliberadamente desconectado ou desobedecer à estrutura dissertativo-argumentativa. Veja todas as orientações na cartilha indicada pela fonte.", "keywords":["redação","zero","zerar","anular","fuga","tema","sete"], "source":"redacao"},
+    {"id":"pontuacao", "category":"provas", "question":"Quanto vale a redação?", "answer":"Até 1.000 pontos. Cada avaliador atribui de 0 a 200 pontos por competência. A publicação oficial explica a correção por dois avaliadores e a composição da nota.", "keywords":["redação","pontos","nota","mil","1000","correção"], "source":"redacao"},
+    {"id":"inscricao", "category":"inscricao", "question":"Onde faço e acompanho minha inscrição?", "answer":"Na Página do Participante: enem.inep.gov.br/participante. Acompanhe ali a situação da inscrição.", "keywords":["inscrever","inscrição","cadastro","página","participante","acompanhar"], "source":"faq"},
+    {"id":"prazo", "category":"inscricao", "question":"Qual foi o prazo de inscrição de 2026?", "answer":"As inscrições da aplicação regular ocorreram de 25 de maio a 12 de junho de 2026. O pagamento foi previsto até 22 de junho. Esses prazos já encerraram.", "keywords":["inscrição","prazo","encerrado","pagamento","inscrições"], "source":"cronograma"},
+    {"id":"taxa", "category":"inscricao", "question":"Qual foi o valor da taxa em 2026?", "answer":"A taxa de inscrição foi de R$ 85 para participantes sem isenção.", "keywords":["taxa","preço","custa","valor","85","isenção"], "source":"faq"},
+    {"id":"atendimento", "category":"inscricao", "question":"Como funciona o atendimento especializado?", "answer":"A solicitação e os documentos comprobatórios seguem as regras do edital e são informados na inscrição. Confira a situação do seu pedido na Página do Participante.", "keywords":["atendimento","especializado","acessibilidade","deficiência","autismo","tea","tempo","adicional"], "source":"faq"},
+    {"id":"social", "category":"inscricao", "question":"É possível solicitar tratamento pelo nome social?", "answer":"Sim. A solicitação ocorre na inscrição, conforme as condições do edital. Consulte os critérios na fonte oficial.", "keywords":["nome","social","tratamento"], "source":"faq"},
+    {"id":"uso", "category":"notas", "question":"Para que posso usar a nota do Enem?", "answer":"Ela pode ser usada no Sisu, ProUni e Fies, conforme as regras de cada programa, e em instituições portuguesas com acordo com o Inep. A participação não garante uma vaga.", "keywords":["nota","sisu","prouni","fies","faculdade","universidade","portugal","vaga"], "source":"apresentacao"},
+    {"id":"treineiro", "category":"notas", "question":"O que significa fazer o Enem como treineiro?", "answer":"Quem ainda não concluiu o ensino médio pode participar como treineiro. Nesse caso, os resultados servem para autoavaliação dos conhecimentos.", "keywords":["treineiro","primeiro","ano","segundo","médio","participar"], "source":"apresentacao"}
+  ]
+}
