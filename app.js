@@ -136,12 +136,7 @@ function setupMascot() {
   const cheer = () => {
     cheerIndex = (cheerIndex + 1) % cheers.length;
     characterNote.textContent = cheers[cheerIndex];
-    const img = character.querySelector('img');
-    if (img) {
-      img.classList.remove('mascot-cheer');
-      void img.offsetWidth;
-      img.classList.add('mascot-cheer');
-    }
+
   };
 
   character.addEventListener('click', cheer);
