@@ -91,3 +91,8 @@
   }
 }
 
+
+/* Enquadramento do rosto do novo mascote nos avatares do chat. */
+.avatar,.mini-avatar{position:relative}
+.avatar img,.mini-avatar img{position:absolute;width:350%;height:auto;max-width:none;left:-132%;top:0;transform:none;object-fit:contain}
+.chat-header:hover .avatar img,.message:hover .mini-avatar img{transform:scale(1.05);transform-origin:52% 18%}

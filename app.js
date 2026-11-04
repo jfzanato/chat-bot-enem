@@ -19,7 +19,7 @@ function message(text, user = false) {
     const avatar = document.createElement('div');
     avatar.className = 'mini-avatar';
     const img = document.createElement('img');
-    img.src = 'assets/ajudante.jpg'; img.alt = '';
+    img.src = 'assets/mascote-estudante.jpg'; img.alt = '';
     avatar.append(img); row.append(avatar);
   }
   const bubble = document.createElement('div');
