@@ -45,6 +45,7 @@ function showCategory(id) {
 function sourceLink(source) {
   const link = document.createElement('a');
   link.href = source.url; link.target = '_blank'; link.rel = 'noopener noreferrer';
+  if (source.url === 'data/fontes/faq-saresp-2026.docx') link.download = 'FAQ do Manual de Orientação do SARESP 2026.docx';
   link.textContent = `${source.title} ↗`; return link;
 }
 function answer(id) {
@@ -53,7 +54,7 @@ function answer(id) {
   message(item.question, true);
   const bubble = message(item.answer);
   const source = document.createElement('div'); source.className = 'source-link';
-  source.append('Fonte: ', sourceLink(base.sources[item.source]));
+  source.append(`Fonte: ${item.sourceItem ? item.sourceItem + ' · ' : ''}`, sourceLink(base.sources[item.source]));
   bubble.append(source);
   choices(bubble, [{label: 'Ver outra dúvida', action: menu}]);
 }
@@ -70,7 +71,7 @@ function search(text) {
 function restart() {
   if (!base) return;
   conversation.replaceChildren();
-  const label = document.createElement('p'); label.className = 'day-label'; label.textContent = 'MANUAL DO ORIENTADOR · SARESP 2026'; conversation.append(label);
+  const label = document.createElement('p'); label.className = 'day-label'; label.textContent = 'FAQ DO MANUAL DE ORIENTAÇÃO · SARESP 2026'; conversation.append(label);
   message(base.messages.welcome); menu(); query.value = '';
 }
 document.querySelector('#search-form').addEventListener('submit', event => {
@@ -97,8 +98,7 @@ async function init() {
       ids.add(item.id);
     }
     for (const source of Object.values(data.sources)) {
-      const url = new URL(source.url);
-      if (url.protocol !== 'https:' || (!url.hostname.endsWith('sp.gov.br') && !url.hostname.endsWith('vunesp.com.br') && !url.hostname.endsWith('gov.br'))) throw new Error('Fonte inválida.');
+      if (source.url !== 'data/fontes/faq-saresp-2026.docx') throw new Error('Fonte inválida.');
     }
     const today = new Intl.DateTimeFormat('sv-SE',{timeZone:'America/Sao_Paulo'}).format(new Date());
     if (today > data.validUntil) throw new Error('Esta base do SARESP 2026 precisa de revisão antes de novas consultas. Acesse as orientações atuais no portal da SEDUC/SP.');
