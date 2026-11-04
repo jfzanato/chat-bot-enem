@@ -1,56 +1,244 @@
 {
   "edition": 2026,
   "reviewedAt": "2026-11-04",
-  "validUntil": "2026-12-31",
+  "validUntil": "2027-12-31",
   "messages": {
-    "welcome": "Oi! Sou seu ajudante do Enem. 👋\nVamos tirar uma dúvida? Minhas respostas são cadastradas e têm fonte oficial para você conferir.",
-    "menu": "Por onde vamos começar? Escolha um assunto:",
-    "choose": "Escolha a pergunta que você quer consultar:",
-    "results": "Encontrei estas perguntas na minha base. Qual delas corresponde à sua dúvida?",
-    "unknown": "Ainda não tenho uma resposta cadastrada para essa dúvida. Escolha um dos assuntos ou consulte a Página do Participante pelo link no topo."
+    "welcome": "Olá! Sou o assistente virtual do SARESP 2026. 👋\nEstou aqui para esclarecer dúvidas sobre o Manual de Orientação da 28ª edição (SEDUC/SP e Fundação VUNESP).\nEscolha um assunto abaixo ou utilize a barra de busca:",
+    "menu": "Por onde deseja começar? Escolha um tema do Manual:",
+    "choose": "Escolha a pergunta que deseja consultar:",
+    "results": "Encontrei estas perguntas no Manual de Orientação. Qual delas corresponde à sua dúvida?",
+    "unknown": "Não encontrei essa informação específica com os termos digitados. Escolha um dos tópicos do menu ou consulte o Manual de Orientação completo."
   },
   "categories": [
-    {"id":"dia", "label":"📅 Datas e horários"},
-    {"id":"levar", "label":"🎒 O que levar"},
-    {"id":"regras", "label":"📵 Durante a prova"},
-    {"id":"provas", "label":"✍️ Provas e redação"},
-    {"id":"inscricao", "label":"📋 Inscrição e atendimento"},
-    {"id":"notas", "label":"🎓 Para que serve a nota"}
+    {"id": "visao-geral", "label": "🌐 Visão Geral e Apresentação"},
+    {"id": "diretrizes", "label": "👥 Diretrizes e Regras de Regência"},
+    {"id": "atendimento", "label": "♿ Atendimento Especial e Nome Social"},
+    {"id": "cronograma", "label": "📅 Cronograma, Horários e Duração"},
+    {"id": "cadernos", "label": "📝 Estrutura dos Cadernos e Provas"},
+    {"id": "instrumentos", "label": "📋 Instrumentos e Controles"},
+    {"id": "atribuicoes", "label": "🏛️ Atribuições das Equipes"},
+    {"id": "logistica", "label": "📦 Logística, Segurança e Devolução"},
+    {"id": "resultados", "label": "💰 Resultados e Ajuda de Custo"},
+    {"id": "suporte", "label": "📞 Canais de Suporte e Plantão"}
   ],
   "sources": {
-    "cronograma": {"title":"Inep · cronograma 2026", "url":"https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/orientacoes/cronograma"},
-    "orientacoes": {"title":"Inep · horários, provas e documentos", "url":"https://www.gov.br/inep/pt-br/centrais-de-conteudo/noticias/enem/enem-2026-falta-um-mes-para-o-primeiro-dia-de-provas"},
-    "obrigacoes": {"title":"Inep · obrigações do participante", "url":"https://www.gov.br/inep/pt-br/acesso-a-informacao/perguntas-frequentes/exame-nacional-do-ensino-medio-enem/no-dia-do-exame-orientacoes/obrigacoes-do-participante-do-enem"},
-    "redacao": {"title":"Inep · orientações da redação 2026", "url":"https://www.gov.br/inep/pt-br/centrais-de-conteudo/noticias/enem/enem-2026-cartilha-da-redacao-esta-disponivel"},
-    "faq": {"title":"Inep · perguntas frequentes do Enem", "url":"https://www.gov.br/inep/pt-br/acesso-a-informacao/perguntas-frequentes/exame-nacional-do-ensino-medio-enem/"},
-    "apresentacao": {"title":"Inep · sobre o Enem", "url":"https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/"}
+    "manual": {
+      "title": "SEDUC/SP · Manual de Orientação do SARESP 2026",
+      "url": "https://www.educacao.sp.gov.br"
+    },
+    "vunesp": {
+      "title": "Fundação VUNESP · Portal do Colaborador e SIS",
+      "url": "https://www.vunesp.com.br"
+    }
   },
   "questions": [
-    {"id":"datas", "category":"dia", "question":"Em quais dias acontece o Enem 2026?", "answer":"A aplicação regular está marcada para 8 e 15 de novembro de 2026.", "keywords":["datas","quando","calendário","dias","novembro"], "source":"cronograma"},
-    {"id":"portoes", "category":"dia", "question":"Que horas os portões abrem e fecham?", "answer":"Nos dois dias: abertura às 12h e fechamento às 13h, pelo horário de Brasília. As provas começam às 13h30.", "keywords":["horário","portões","abre","fecha","atraso","atrasado","início"], "source":"orientacoes"},
-    {"id":"duracao", "category":"dia", "question":"Quanto tempo dura a prova?", "answer":"No tempo regular: 5h30 no primeiro dia, com término às 19h; 5h no segundo, com término às 18h30. Horário de Brasília.", "keywords":["tempo","duração","termina","fim","horas"], "source":"orientacoes"},
-    {"id":"local", "category":"dia", "question":"Onde consulto meu local de prova?", "answer":"Confira a confirmação da inscrição e o local de aplicação na Página do Participante: enem.inep.gov.br/participante. Faça essa consulta com antecedência.", "keywords":["local","endereço","escola","sala","cartão","confirmação"], "source":"obrigacoes"},
-    {"id":"documentos", "category":"levar", "question":"Qual documento de identificação posso levar?", "answer":"Entre os documentos aceitos estão RG, CIN, CNH e passaporte. A lista completa de documentos válidos está na fonte oficial abaixo.", "keywords":["documento","identidade","rg","cnh","cin","passaporte","identificação"], "source":"orientacoes"},
-    {"id":"digital", "category":"levar", "question":"Posso apresentar documento digital?", "answer":"Sim. O Inep informa a aceitação de CIN e documentos digitais como e-Título, CNH e RG por meio do aplicativo Gov.br. Confira as orientações oficiais antes da prova.", "keywords":["digital","aplicativo","gov","título","documento","celular"], "source":"orientacoes"},
-    {"id":"caneta", "category":"levar", "question":"Qual caneta devo usar?", "answer":"Use caneta esferográfica de tinta preta e corpo transparente para preencher as respostas e a redação.", "keywords":["caneta","preta","azul","transparente","tinta","material"], "source":"obrigacoes"},
-    {"id":"lanche", "category":"levar", "question":"Posso levar lanche e medicamentos?", "answer":"As orientações preveem lanche e medicamentos, que devem ser apresentados para vistoria do chefe de sala.", "keywords":["lanche","comida","comer","alimento","medicamento","remédio"], "source":"obrigacoes"},
-    {"id":"declaracao", "category":"levar", "question":"Como comprovo que compareci ao exame?", "answer":"Se precisar comprovar presença, apresente a Declaração de Comparecimento impressa ao chefe de sala, na porta da sala, em cada dia de aplicação.", "keywords":["declaração","comparecimento","presença","trabalho","comprovante"], "source":"obrigacoes"},
-    {"id":"celular", "category":"regras", "question":"O que faço com o celular durante a prova?", "answer":"Desligue o aparelho e desative os alarmes. Guarde-o no envelope porta-objetos, lacrado e identificado, até a saída definitiva do local. Mantenha o envelope debaixo da carteira.", "keywords":["celular","telefone","alarme","envelope","eletrônico","desligar"], "source":"obrigacoes"},
-    {"id":"objetos", "category":"regras", "question":"Posso usar relógio, lápis ou calculadora?", "answer":"Relógios de qualquer tipo, lápis, borracha e calculadoras devem ficar guardados no envelope porta-objetos. Consulte a lista completa de objetos na fonte.", "keywords":["relógio","lápis","borracha","calculadora","proibido","objetos","boné"], "source":"obrigacoes"},
-    {"id":"saida", "category":"regras", "question":"Quando posso sair da sala em definitivo?", "answer":"Somente depois de duas horas do início da prova. Os três últimos participantes saem juntos após a assinatura da ata, exceto nas salas de atendimento especializado.", "keywords":["sair","saída","embora","mínimo","permanência"], "source":"obrigacoes"},
-    {"id":"caderno", "category":"regras", "question":"Posso levar o caderno de questões para casa?", "answer":"Sim, se sair em definitivo nos últimos 30 minutos da prova. Entregue os demais materiais exigidos ao chefe de sala.", "keywords":["caderno","questões","levar","casa","trinta","minutos"], "source":"obrigacoes"},
-    {"id":"estrutura", "category":"provas", "question":"Quantas questões tem o Enem?", "answer":"São 180 questões objetivas, distribuídas em quatro áreas do conhecimento, e uma redação.", "keywords":["quantas","quantidade","questões","estrutura","180"], "source":"apresentacao"},
-    {"id":"materias", "category":"provas", "question":"Quais matérias caem em cada dia?", "answer":"Primeiro dia: Linguagens, Ciências Humanas e Redação. Segundo dia: Ciências da Natureza e Matemática.", "keywords":["matérias","disciplinas","primeiro","segundo","humanas","natureza","matemática","linguagens"], "source":"orientacoes"},
-    {"id":"texto", "category":"provas", "question":"Como deve ser o texto da redação?", "answer":"Um texto dissertativo-argumentativo de até 30 linhas, sobre o tema proposto, apoiado nos textos motivadores e nos seus conhecimentos.", "keywords":["redação","texto","linhas","formato","dissertativo","argumentativo"], "source":"redacao"},
-    {"id":"competencias", "category":"provas", "question":"O que é avaliado na redação?", "answer":"Cinco competências: escrita formal; compreensão do tema; organização de argumentos; mecanismos linguísticos de argumentação; e proposta de intervenção que respeite os direitos humanos.", "keywords":["redação","competências","critérios","avaliação","intervenção"], "source":"redacao"},
-    {"id":"zero", "category":"provas", "question":"O que pode zerar a redação?", "answer":"Entre as situações previstas estão fugir ao tema, escrever até sete linhas, inserir trecho deliberadamente desconectado ou desobedecer à estrutura dissertativo-argumentativa. Veja todas as orientações na cartilha indicada pela fonte.", "keywords":["redação","zero","zerar","anular","fuga","tema","sete"], "source":"redacao"},
-    {"id":"pontuacao", "category":"provas", "question":"Quanto vale a redação?", "answer":"Até 1.000 pontos. Cada avaliador atribui de 0 a 200 pontos por competência. A publicação oficial explica a correção por dois avaliadores e a composição da nota.", "keywords":["redação","pontos","nota","mil","1000","correção"], "source":"redacao"},
-    {"id":"inscricao", "category":"inscricao", "question":"Onde faço e acompanho minha inscrição?", "answer":"Na Página do Participante: enem.inep.gov.br/participante. Acompanhe ali a situação da inscrição.", "keywords":["inscrever","inscrição","cadastro","página","participante","acompanhar"], "source":"faq"},
-    {"id":"prazo", "category":"inscricao", "question":"Qual foi o prazo de inscrição de 2026?", "answer":"As inscrições da aplicação regular ocorreram de 25 de maio a 12 de junho de 2026. O pagamento foi previsto até 22 de junho. Esses prazos já encerraram.", "keywords":["inscrição","prazo","encerrado","pagamento","inscrições"], "source":"cronograma"},
-    {"id":"taxa", "category":"inscricao", "question":"Qual foi o valor da taxa em 2026?", "answer":"A taxa de inscrição foi de R$ 85 para participantes sem isenção.", "keywords":["taxa","preço","custa","valor","85","isenção"], "source":"faq"},
-    {"id":"atendimento", "category":"inscricao", "question":"Como funciona o atendimento especializado?", "answer":"A solicitação e os documentos comprobatórios seguem as regras do edital e são informados na inscrição. Confira a situação do seu pedido na Página do Participante.", "keywords":["atendimento","especializado","acessibilidade","deficiência","autismo","tea","tempo","adicional"], "source":"faq"},
-    {"id":"social", "category":"inscricao", "question":"É possível solicitar tratamento pelo nome social?", "answer":"Sim. A solicitação ocorre na inscrição, conforme as condições do edital. Consulte os critérios na fonte oficial.", "keywords":["nome","social","tratamento"], "source":"faq"},
-    {"id":"uso", "category":"notas", "question":"Para que posso usar a nota do Enem?", "answer":"Ela pode ser usada no Sisu, ProUni e Fies, conforme as regras de cada programa, e em instituições portuguesas com acordo com o Inep. A participação não garante uma vaga.", "keywords":["nota","sisu","prouni","fies","faculdade","universidade","portugal","vaga"], "source":"apresentacao"},
-    {"id":"treineiro", "category":"notas", "question":"O que significa fazer o Enem como treineiro?", "answer":"Quem ainda não concluiu o ensino médio pode participar como treineiro. Nesse caso, os resultados servem para autoavaliação dos conhecimentos.", "keywords":["treineiro","primeiro","ano","segundo","médio","participar"], "source":"apresentacao"}
+    {
+      "id": "p1-visao-geral-finalidade",
+      "category": "visao-geral",
+      "question": "O que é o SARESP 2026 e qual é a sua finalidade principal?",
+      "answer": "O SARESP 2026 é a 28ª edição do Sistema de Avaliação de Rendimento Escolar do Estado de São Paulo, uma avaliação externa da Educação Básica aplicada desde 1996. Sua finalidade principal é fornecer informações consistentes, periódicas e comparáveis sobre a situação da escolaridade básica na rede pública de ensino paulista, orientando os gestores no monitoramento e na melhoria da qualidade do ensino.",
+      "keywords": ["SARESP 2026", "SEDUC/SP", "avaliação externa", "rendimento escolar", "qualidade do ensino", "histórico"],
+      "source": "manual"
+    },
+    {
+      "id": "p2-publico-alvo-series",
+      "category": "visao-geral",
+      "question": "Qual é o público-alvo do SARESP 2026 e quais anos/séries são avaliados?",
+      "answer": "O SARESP 2026 abrange estudantes do ensino regular nos períodos da manhã, tarde e noite. A avaliação é censitária para o 5º, 6º, 7º, 8º e 9º anos do Ensino Fundamental (EF), e para a 1ª, 2ª e 3ª séries do Ensino Médio (EM), incluindo o Provão Paulista Seriado e os Itinerários Formativos (gerais e de Formação Técnica/Profissionalizante na 2ª e 3ª séries).",
+      "keywords": ["Público-alvo", "Ensino Fundamental", "Ensino Médio", "Provão Paulista Seriado", "Itinerários Formativos", "avaliação censitária"],
+      "source": "manual"
+    },
+    {
+      "id": "p3-formatos-impresso-digital",
+      "category": "visao-geral",
+      "question": "Quais formatos de aplicação são utilizados no SARESP 2026 (impresso e digital)?",
+      "answer": "O SARESP 2026 utiliza os formatos impresso e digital, divididos por ano/série:\n\n• Formato Impresso: 5º ano EF, 9º ano EF, e 1ª, 2ª e 3ª séries do EM (no âmbito do Provão Paulista Seriado).\n• Formato Digital: 6º, 7º e 8º anos do EF, 3ª série EM da rede estadual (Língua Portuguesa e Matemática), e Itinerários Formativos (2ª e 3ª séries EM).",
+      "keywords": ["Formato impresso", "formato digital", "provas digitais", "5º ano", "9º ano", "Ensino Médio"],
+      "source": "manual"
+    },
+    {
+      "id": "p4-quem-aplica-provas",
+      "category": "diretrizes",
+      "question": "Quem deve realizar a aplicação das provas em sala de aula?",
+      "answer": "As provas devem ser aplicadas obrigatoriamente por professores de outras escolas, mediante o Plano de Aplicação elaborado pelas Unidades Regionais de Ensino (UREs). Exceções regulamentadas:\n\n1. Redes Municipais (5º ano EF): Podem utilizar professores da própria escola, desde que apliquem em turmas/anos diferentes dos que lecionam e em disciplinas distintas.\n2. Escolas Particulares e Rede SESI: Podem aplicar com professores da própria unidade, respeitando a troca de turmas e componentes curriculares.\n3. Escolas do Programa de Ensino Integral (PEI): A aplicação ocorre preferencialmente por permuta entre professores de outras escolas PEI.",
+      "keywords": ["Aplicadores", "professores aplicadores", "permuta de professores", "Plano de Aplicação", "escolas PEI", "rede municipal"],
+      "source": "manual"
+    },
+    {
+      "id": "p5-parentesco-eletronicos",
+      "category": "diretrizes",
+      "question": "Quais são as restrições de parentesco e uso de eletrônicos durante a aplicação?",
+      "answer": "É expressamente proibido que membros da equipe de aplicação (aplicadores, fiscais, diretores) tenham vínculo de parentesco com estudantes participantes do Provão Paulista Seriado. Nesses casos, deve ser assinada e arquivada a Declaração de Parentesco.\n\nAlém disso, é proibido o uso de celulares e aparelhos eletrônicos pelos aplicadores durante a aplicação. Os estudantes do Provão Paulista Seriado devem guardar seus aparelhos eletrônicos em embalagens específicas fornecidas antes do início da prova.",
+      "keywords": ["Grau de parentesco", "Declaração de Parentesco", "proibição de celular", "aparelhos eletrônicos", "integridade do exame"],
+      "source": "manual"
+    },
+    {
+      "id": "p6-funcionamento-unidade-escolar",
+      "category": "diretrizes",
+      "question": "Como deve ser o funcionamento da unidade escolar nos dias do Provão Paulista Seriado?",
+      "answer": "Nos dias do Provão Paulista Seriado, o atendimento ao público presencial estará suspenso. A circulação na escola é restrita aos estudantes avaliados e à equipe de aplicação.\n\nPara garantir o dia letivo e o cumprimento dos 200 dias letivos previstos na legislação, as turmas que não estiverem em avaliação deverão realizar atividades pedagógicas de forma remota.",
+      "keywords": ["Provão Paulista Seriado", "suspensão de atendimento", "circulação restrita", "aulas remotas", "200 dias letivos"],
+      "source": "manual"
+    },
+    {
+      "id": "p7-atendimento-educacao-especial",
+      "category": "atendimento",
+      "question": "Como é organizado o atendimento aos estudantes elegíveis aos serviços de Educação Especial?",
+      "answer": "Os estudantes elegíveis à Educação Especial recebem recursos e apoios de acessibilidade com base no cadastro atualizado no Sistema de Cadastro de Alunos até a data-base de 17/08/2026. Se houver necessidade de sala extra, o Diretor solicita e o Coordenador de Avaliação valida a abertura via plataforma SIS. Os recursos disponibilizados incluem:\n\n• Deficiência Visual: Provas em Braille ou ampliadas (fonte Verdana, tamanho 24), ledores, lupas e audiodescrição na aplicação digital.\n• Deficiência Auditiva / Surdez: Apoio de professor especialista/interlocutor de Libras ou tradutor/intérprete.\n• Deficiência Física / Motora: Profissional de apoio para auxílio na transcrição ou manuseio.\n• Deficiência Intelectual / TEA: Apoio dos profissionais já habituados à rotina escolar do estudante.\n• Tempo Adicional: Concessão de 1 hora a mais para a realização das provas.",
+      "keywords": ["Educação Especial", "acessibilidade", "prova em Braille", "prova ampliada", "Libras", "tempo adicional", "sala extra", "SIS"],
+      "source": "manual"
+    },
+    {
+      "id": "p8-regra-nome-social",
+      "category": "atendimento",
+      "question": "Qual é a regra para a utilização do Nome Social no SARESP 2026?",
+      "answer": "O Nome Social é assegurado a pessoas travestis e transexuais e constará em todos os materiais de avaliação (listas e folhas de respostas) dos estudantes que realizaram a atualização na SED até a data-base de 17/08/2026. Caso o nome social não conste no material impresso e o estudante solicite, o aplicador deve perguntar respeitosamente como ele deseja ser chamado e proceder com o devido respeito.",
+      "keywords": ["Nome Social", "travesti", "transexual", "inclusão", "data-base 17/08/2026", "respeito à identidade"],
+      "source": "manual"
+    },
+    {
+      "id": "p9-cronograma-datas-aplicacao",
+      "category": "cronograma",
+      "question": "Quais são as principais datas do cronograma de aplicação do SARESP 2026?",
+      "answer": "As provas do SARESP 2026 ocorrem entre outubro e dezembro de 2026, divididas por público:\n\n• 9º ano EF (Impresso): 29 e 30/10/2026 (Extra: 02 e 03/12/2026).\n• 3ª série EM - Provão Paulista (Impresso): 04 e 05/11/2026 (Extra: 16 e 17/11/2026).\n• Itinerário Formativo 3ª EM (Digital): 06/11/2026 (Extra: 04/12/2026).\n• Itinerário Formativo 2ª EM (Digital): 09/11/2026 (Extra: 04/12/2026).\n• 2ª série EM - Provão Paulista (Impresso): 10 e 11/11/2026 (Extra: 09 e 10/12/2026).\n• 1ª série EM - Provão Paulista (Impresso): 12 e 13/11/2026 (Extra: 09 e 10/12/2026).\n• 6º ano EF (Digital): 18 e 19/11/2026 (Extra: 02 e 03/12/2026).\n• 5º ano EF (Impresso): 23/11/2026 (Extra: 02/12/2026).\n• 7º ano EF (Digital): 26 e 27/11/2026 (Extra: 02 e 03/12/2026).\n• 8º ano EF (Digital): 30/11 e 01/12/2026 (Extra: 02 e 03/12/2026).",
+      "keywords": ["Cronograma", "datas de prova", "aplicação principal", "aplicação extra", "Ensino Fundamental", "Ensino Médio"],
+      "source": "manual"
+    },
+    {
+      "id": "p10-duracao-permanencia-sala",
+      "category": "cronograma",
+      "question": "Qual é a duração das provas e o tempo de permanência mínima dos estudantes em sala?",
+      "answer": "A duração e a permanência mínima variam conforme a etapa de ensino:\n\n• 5º ano EF: Duração de 3h30min, com intervalo de até 15 minutos; permanência mínima de 1h45min.\n• 6º ao 9º ano EF: Duração de 4 horas, sem intervalo; permanência mínima de 1h45min.\n• 2ª e 3ª séries EM (Itinerário Formativo): Duração de 2 horas, sem intervalo; permanência mínima de 1 hora.\n• 1ª e 2ª séries EM (Provão Paulista Seriado): Duração de 4 horas, sem intervalo; permanência mínima de 2 horas.\n• 3ª série EM (Provão Paulista Seriado): Duração de 5 horas (inclui Redação), sem intervalo; permanência mínima de 2h30min.",
+      "keywords": ["Duração da prova", "permanência mínima", "horário de aplicação", "intervalo", "Provão Paulista"],
+      "source": "manual"
+    },
+    {
+      "id": "p11-horarios-portoes-provao",
+      "category": "cronograma",
+      "question": "Quais são os horários de abertura e fechamento dos portões para o Provão Paulista Seriado?",
+      "answer": "Para as provas do Provão Paulista Seriado no período da manhã:\n\n• 07h00: Abertura dos portões para entrada dos estudantes.\n• 07h00 às 07h45: Período reservado para lanche/refeição.\n• 07h45: Fechamento impreterível dos portões da escola (registrado no Termo de Fechamento dos Portões).\n• 08h00: Início formal da aplicação da prova.",
+      "keywords": ["Portões", "fechamento de portões", "07h45", "horário de início", "Termo de Fechamento"],
+      "source": "manual"
+    },
+    {
+      "id": "p12-cadernos-fundamental",
+      "category": "cadernos",
+      "question": "Como são estruturados os cadernos de prova do 5º e do 9º ano do Ensino Fundamental?",
+      "answer": "• 5º ano EF (Impresso): 26 versões de cadernos compostas por 48 itens de múltipla escolha (4 alternativas), sendo 24 de Língua Portuguesa e 24 de Matemática.\n\n• 9º ano EF (Impresso): Caderno I com 48 itens de múltipla escolha (24 LP e 24 MAT); Caderno II com 12 itens de Resposta Construída (06 LP e 06 MAT); Caderno com 40 itens de múltipla escolha abarcando Língua Inglesa (04 itens), Ciências da Natureza (16 itens) e Ciências Humanas (10 de História + 10 de Geografia).",
+      "keywords": ["Cadernos de prova", "5º ano", "9º ano", "múltipla escolha", "resposta construída", "Língua Portuguesa", "Matemática", "Ciências"],
+      "source": "manual"
+    },
+    {
+      "id": "p13-provao-paulista-ensino-medio",
+      "category": "cadernos",
+      "question": "Como é estruturada a prova do Provão Paulista Seriado (1ª a 3ª série EM)?",
+      "answer": "As provas contêm itens de múltipla escolha com 5 alternativas de resposta (A, B, C, D, E) distribuídas em dois dias de aplicação:\n\n• 1º Dia: Linguagens e suas Tecnologias (18 itens de Língua Portuguesa + 6 de Língua Inglesa) e Ciências da Natureza e suas Tecnologias (18 itens na 3ª série) = Total de 48 itens. Na 3ª série EM inclui também 1 prova de Redação dissertativo-argumentativa.\n• 2º Dia: Matemática e suas Tecnologias (18 itens) e Ciências Humanas e Sociais Aplicadas (História, Geografia, Filosofia e Sociologia) = Total de 42 itens.",
+      "keywords": ["Provão Paulista Seriado", "1º dia", "2º dia", "Redação", "Linguagens", "Matemática", "Ciências da Natureza", "Ciências Humanas"],
+      "source": "manual"
+    },
+    {
+      "id": "p14-provas-digitais-itinerarios",
+      "category": "cadernos",
+      "question": "O que são avaliado nas provas digitais de Itinerários Formativos da 2ª e 3ª séries do EM?",
+      "answer": "As provas digitais de Itinerários Formativos contêm itens de múltipla escolha com 5 alternativas, focando nas opções de aprofundamento e formação técnica:\n\n• Aprofundamento Acadêmico (LGG, CHS, MAT, CNT): Componentes como Liderança e Oratória, Arte e Mídias Digitais, Programação, Empreendedorismo, Atualidades, Filosofia, Sociologia, Biologia e Química.\n• Formação Técnica e Profissional: Cursos de Administração, Agronegócio, Ciência de Dados, Desenvolvimento de Sistemas, Enfermagem, Farmácia, Hospedagem, Logística, Vendas, Meio Ambiente e Eletrônica (com matrizes específicas de 20 a 32 itens).",
+      "keywords": ["Itinerários Formativos", "ensino técnico", "formação profissional", "prova digital", "aprofundamento"],
+      "source": "manual"
+    },
+    {
+      "id": "p15-documentos-instrumentos-orientacao",
+      "category": "instrumentos",
+      "question": "Quais são os principais documentos e instrumentos de orientação do SARESP 2026?",
+      "answer": "O programa disponibiliza diversos manuais direcionados a cada perfil profissional:\n\n1. Manual de Orientação: Para escolas e equipes regionais com a visão logística e operacional completa.\n2. Manuais do Aplicador: Versões específicas para 5º/9º ano EF (impresso), 6º ao 8º ano EF e Itinerários (digital), e 1ª a 3ª EM (Provão Paulista).\n3. Manual do Fiscal: Orientações detalhadas para fiscalização externa.\n4. Manual do Agente Vunesp e Apoio Regional: Diretrizes para gestão logística e do sistema SIS.\n5. Vídeo de Orientação Técnica: Recurso audiovisual de apoio aos aplicadores.",
+      "keywords": ["Manuais de orientação", "Manual do Aplicador", "Manual do Fiscal", "suporte pedagógico", "procedimentos"],
+      "source": "manual"
+    },
+    {
+      "id": "p16-instrumentos-controle-aplicacao",
+      "category": "instrumentos",
+      "question": "Quais instrumentos de controle devem ser preenchidos durante a aplicação?",
+      "answer": "A aplicação exige os seguintes instrumentos de registro e segurança:\n\n• Termo de Compromisso e Sigilo do Aplicador: Assinado pelo aplicador antes de iniciar as provas.\n• Formulário de Controle da Aplicação: Preenchido pelo aplicador ao final da prova (em papel no impresso ou direto no SIS na aplicação digital).\n• Lista de Presença dos Estudantes: Registro físico de presença nas provas impressas.\n• Termo de Fechamento dos Portões: Documento assinado pelo Diretor e testemunhas no Provão Paulista.\n• Formulário de Observação dos Pais: 2 formulários por escola/dia para registrar opiniões dos responsáveis (exceto no Provão Paulista).\n• Formulário do Fiscal: Registro digital no SIS efetuado pelos fiscais externos durante as fiscalizações de sala.",
+      "keywords": ["Instrumentos de controle", "Termo de Sigilo", "Formulário de Controle", "Lista de Presença", "Formulário dos Pais", "Formulário do Fiscal"],
+      "source": "manual"
+    },
+    {
+      "id": "p17-atribuicoes-equipe-central",
+      "category": "atribuicoes",
+      "question": "Quais são as atribuições da Equipe Central (SEDUC/SP e VUNESP)?",
+      "answer": "• SEDUC/SP (SUPED/DIAVAL): Define diretrizes pedagógicas, constrói e valida as Matrizes de Referência, valida itens, cadernos de prova, manuais e estabelece os parâmetros dos relatórios.\n\n• Fundação VUNESP: Instituição contratada responsável pela logística completa (impressão, empacotamento, transporte, distribuição e recolhimento), operação da plataforma SIS, recrutamento/treinamento de fiscais e processamento óptico das respostas e redações.",
+      "keywords": ["SEDUC/SP", "VUNESP", "SUPED", "DIAVAL", "logística", "Matrizes de Referência", "processamento"],
+      "source": "manual"
+    },
+    {
+      "id": "p18-papel-equipe-regional",
+      "category": "atribuicoes",
+      "question": "Qual é o papel da Equipe Regional (Dirigente, Coordenador de Avaliação, Agente Vunesp e Apoio Regional)?",
+      "answer": "A equipe regional gerencia o processo no âmbito da Unidade Regional de Ensino (URE) e município-polo (SME-Polo):\n\n• Dirigente Regional de Ensino: Designa coordenadores, convoca aplicadores, assegura o sigilo e apura eventuais irregularidades.\n• Coordenador de Avaliação: Elabora o Plano de Aplicação, organiza o recebimento e distribuição de caixas, valida salas extras no SIS e consolida os relatórios regionais.\n• Agente Vunesp e Auxiliar: Profissionais da VUNESP que gerenciam a leitura de leitores ópticos/QR Codes, capacitam e alocam fiscais externos, e coordenam a logística regional.\n• Apoio Regional e Chapas: Auxiliam na movimentação física de caixas e operação do plantão de atendimento da URE.",
+      "keywords": ["Equipe regional", "Dirigente Regional", "Coordenador de Avaliação", "Agente Vunesp", "Apoio Regional", "Chapa", "URE", "SME-Polo"],
+      "source": "manual"
+    },
+    {
+      "id": "p19-responsabilidades-diretor-escola",
+      "category": "atribuicoes",
+      "question": "Quais são as responsabilidades do Diretor da Unidade Escolar (Coordenador de Aplicação)?",
+      "answer": "O Diretor da Escola coordena todas as ações na unidade escolar:\n\n1. Antes da Prova: Convocação e indicação de aplicadores no SIS, treinamento da equipe escolar, conferência do cadastro de estudantes no SIS, retirada das caixas lacradas na URE, garantia do sigilo do material.\n2. No Dia da Prova: Estar na escola com 1 hora de antecedência, recepcionar fiscais e aplicadores externos, entregar pacotes lacrados aos aplicadores, supervisionar o fechamento de portões, cadastrar códigos de folhas de respostas reservas no SIS.\n3. Após a Prova: Receber os pacotes lacrados devolvidos pelos aplicadores, atestar a presença de fiscais e aplicadores no SIS, recolher formulários dos pais e devolver as caixas organizadas na URE/SME-Polo.",
+      "keywords": ["Diretor de escola", "Coordenador de Aplicação", "atribuições do diretor", "recebimento de materiais", "atesto no SIS"],
+      "source": "manual"
+    },
+    {
+      "id": "p20-atribuicoes-aplicador-fiscal",
+      "category": "atribuicoes",
+      "question": "Quais são as atribuições do Professor Aplicador e do Fiscal Externo?",
+      "answer": "• Professor Aplicador: Deve chegar 1 hora antes, assinar o Termo de Sigilo, conferir documentos dos alunos, recolher celulares, abrir pacotes lacrados apenas dentro da sala na presença dos alunos, manter a ordem, preencher a Lista de Presença e o Formulário de Controle, e lacrar novamente o material ao final da prova.\n\n• Fiscal Externo (VUNESP): Profissional contratado sem vínculo com as redes de ensino avaliadas. Deve inspecionar a escola e salas (no mínimo 3 ingressos durante o Provão Paulista), verificar a integridade dos lacres e registrar observações no Formulário do Fiscal via SIS.",
+      "keywords": ["Professor Aplicador", "Fiscal Vunesp", "regras de sala", "abertura de pacote", "lacre", "fiscalização"],
+      "source": "manual"
+    },
+    {
+      "id": "p21-embalagens-identificacao-caixas",
+      "category": "logistica",
+      "question": "Como são embaladas e identificadas as caixas e pacotes de provas?",
+      "answer": "As provas e materiais são acondicionados em caixas de papelão lacradas, identificadas por etiquetas de cor e letras indicando a rede de ensino:\n\n• Letra \"E\": Rede Estadual.\n• Letra \"M\": Rede Municipal.\n• Letra \"P\": Rede Particular.\n• Letra \"S\": Rede Paula Souza (ETEC).\n\nDentro das caixas, os cadernos e folhas de respostas estão empacotados em sacos plásticos opacos Coex com dupla fita de lacre, acompanhados de Folha de Rosto colorida no bolso transparente externo para identificação do ano/série.",
+      "keywords": ["Embalagem", "saco plástico Coex", "fita de lacre", "identificação por rede", "Folha de Rosto", "caixas de prova"],
+      "source": "manual"
+    },
+    {
+      "id": "p22-regras-seguranca-pacotes",
+      "category": "logistica",
+      "question": "Quais são as regras de segurança para a circulação dos pacotes de prova na escola?",
+      "answer": "Os pacotes contendo os cadernos de prova e folhas de respostas devem ser entregues lacrados aos aplicadores e somente podem ser abertos dentro da sala de aula, na presença dos estudantes. Ao término da aplicação, os materiais devem ser imediatamente acondicionados e lacrados pelo aplicador dentro da sala. É expressamente proibido que pacotes circulem abertos em qualquer dependência da unidade escolar.",
+      "keywords": ["Regras de segurança", "pacotes lacrados", "abertura em sala", "sigilo das provas", "proibição de circulação aberta"],
+      "source": "manual"
+    },
+    {
+      "id": "p23-controle-leitura-qr-code",
+      "category": "logistica",
+      "question": "Como funciona o controle de entrega e devolução por leitura óptica de QR Code?",
+      "answer": "Toda a movimentação das caixas e pacotes entre a VUNESP, UREs/SMEs-Polo e Escolas é controlada eletronicamente via aplicativo móvel e leitura óptica de leitores de código de barras e QR Codes impressos nas Folhas de Rosto dos pacotes. As folhas de rosto e QR Codes devem ser preservados sem rasuras para garantir a rastreabilidade integral dos instrumentos.",
+      "keywords": ["Leitura óptica", "QR Code", "controle logístico", "rastreabilidade", "código de barras", "aplicativo móvel"],
+      "source": "manual"
+    },
+    {
+      "id": "p24-processamento-resultados-divulgacao",
+      "category": "resultados",
+      "question": "Como são processadas as provas e quando são divulgados os resultados do SARESP 2026?",
+      "answer": "As Folhas de Respostas e Formulários são processados pela Fundação VUNESP por meio de leitura óptica e reconhecimento de imagem, enquanto as Redações da 3ª série EM são corrigidas por banca especialista. A divulgação dos resultados ocorre em etapas a partir de Fevereiro e Março de 2027:\n\n• Fevereiro/2027: Listagens individuais do Provão Paulista Seriado e Boletins de Resultados de cada escola no site da SEDUC/SP.\n• Março/2027: Divulgação do Sumário Executivo, Relatório do SARESP e Devolutivas Pedagógicas.",
+      "keywords": ["Processamento de provas", "leitura óptica", "correção de redação", "Boletim de Resultados", "Sumário Executivo", "divulgação"],
+      "source": "manual"
+    },
+    {
+      "id": "p25-ajuda-custo-prazos-condicoes",
+      "category": "resultados",
+      "question": "Quais são os prazos e condições para o pagamento da ajuda de custo das equipes?",
+      "answer": "O pagamento da ajuda de custo aos aplicadores, fiscais, chapas e apoios é realizado diretamente em conta bancária cadastrada no Portal do Colaborador VUNESP, condicionado ao atesto de presença realizado pelo Diretor no SIS:\n\n• Atesto até 23/11/2026: Pagamento em 08/12/2026.\n• Atesto até 23/12/2026: Pagamento em 08/01/2027.\n• Atesto até 22/01/2027: Pagamento em 11/02/2027.\n\nNota: O prazo limite final impreterível para lançamento de atesto no SIS é 22/01/2027.",
+      "keywords": ["Ajuda de custo", "pagamento", "atesto de presença", "SIS", "Portal do Colaborador VUNESP", "cronograma financeiro"],
+      "source": "vunesp"
+    },
+    {
+      "id": "p26-canais-suporte-comunicacao",
+      "category": "suporte",
+      "question": "Quais são os canais de atendimento e suporte oferecidos para tirar dúvidas durante a aplicação?",
+      "answer": "A VUNESP e a SEDUC disponibilizam canais centrais e plantões dedicados:\n\n• Central de Atendimento VUNESP: Telefone (11) 3874-6300 | E-mail: infosaresp@vunesp.com.br.\n• Plantão Logístico VUNESP: Telefone (11) 99330-4111 | E-mail: logistica@vunesp.com.br.\n• Plantão nas UREs/SMEs-Polo: Atendimento presencial e telefônico conduzido pelo Dirigente e Coordenador de Avaliação durante todo o período de prova nos três turnos (manhã, tarde e noite).",
+      "keywords": ["Suporte", "canais de atendimento", "plantão logístico", "VUNESP", "telefone de contato", "dúvidas operacionais"],
+      "source": "vunesp"
+    }
   ]
 }

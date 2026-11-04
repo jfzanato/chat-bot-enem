@@ -58,7 +58,7 @@ function answer(id) {
   choices(bubble, [{label: 'Ver outra dúvida', action: menu}]);
 }
 function search(text) {
-  const terms = [...new Set(normalize(text).split(' ').filter(term => term.length > 2 && !['que','qual','como','posso','para','uma','enem','quero','sobre','das','dos','tem','sao','com','por','nao'].includes(term)))];
+  const terms = [...new Set(normalize(text).split(' ').filter(term => term.length > 2 && !['que','qual','como','posso','para','uma','saresp','enem','quero','sobre','das','dos','tem','sao','com','por','nao'].includes(term)))];
   if (!terms.length) return [];
   return base.questions.map(item => {
     const corpus = normalize(`${item.question} ${item.keywords.join(' ')}`);
@@ -70,7 +70,7 @@ function search(text) {
 function restart() {
   if (!base) return;
   conversation.replaceChildren();
-  const label = document.createElement('p'); label.className = 'day-label'; label.textContent = 'SEU GUIA PARA O ENEM'; conversation.append(label);
+  const label = document.createElement('p'); label.className = 'day-label'; label.textContent = 'MANUAL DO ORIENTADOR · SARESP 2026'; conversation.append(label);
   message(base.messages.welcome); menu(); query.value = '';
 }
 document.querySelector('#search-form').addEventListener('submit', event => {
@@ -98,10 +98,10 @@ async function init() {
     }
     for (const source of Object.values(data.sources)) {
       const url = new URL(source.url);
-      if (url.protocol !== 'https:' || url.hostname !== 'www.gov.br') throw new Error('Fonte inválida.');
+      if (url.protocol !== 'https:' || (!url.hostname.endsWith('sp.gov.br') && !url.hostname.endsWith('vunesp.com.br') && !url.hostname.endsWith('gov.br'))) throw new Error('Fonte inválida.');
     }
     const today = new Intl.DateTimeFormat('sv-SE',{timeZone:'America/Sao_Paulo'}).format(new Date());
-    if (today > data.validUntil) throw new Error('Esta base de 2026 precisa de revisão antes de novas consultas. Acesse as orientações atuais na Página do Participante.');
+    if (today > data.validUntil) throw new Error('Esta base do SARESP 2026 precisa de revisão antes de novas consultas. Acesse as orientações atuais no portal da SEDUC/SP.');
     base = data;
     query.disabled = false; document.querySelector('#send').disabled = false; document.querySelector('#sources').disabled = false;
     document.querySelector('#review').textContent = `Revisado em ${data.reviewedAt.split('-').reverse().join('/')}`;
@@ -120,12 +120,12 @@ function setupMascot() {
   if (!character || !characterNote) return;
 
   const cheers = [
-    'Vamos nessa!',
-    'Foco nos estudos! 🎯',
-    'Tô na torcida! 🎓',
-    'Uma questão de cada vez! 📝',
-    'Bora detonar no Enem! 🚀',
-    'Você vai se sair bem! ✨'
+    'Tudo pronto!',
+    'Foco na aplicação! 📋',
+    'Tudo sob controle! 🛡️',
+    'Procedimentos em ordem! ✍️',
+    'Bom trabalho a todos! 🎓',
+    'Sucesso no SARESP 2026! ✨'
   ];
   let cheerIndex = 0;
 
