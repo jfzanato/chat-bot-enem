@@ -1,9 +1,9 @@
 {
   "edition": 2026,
-  "reviewedAt": "2026-11-04",
+  "reviewedAt": "2026-11-05",
   "validUntil": "2027-12-31",
   "messages": {
-    "welcome": "Olá! Sou seu ajudante do SARESP e Provão Paulista Seriado 2026. 👋\nMinhas 26 perguntas e respostas vêm do novo documento fornecido. Escolha um assunto ou busque uma pergunta cadastrada.",
+    "welcome": "Olá! Sou seu ajudante do SARESP e Provão Paulista Seriado 2026. 👋\nMinhas 55 perguntas e respostas vêm dos documentos fornecidos. Escolha um assunto ou busque uma pergunta cadastrada.",
     "menu": "Escolha um assunto do documento:",
     "choose": "Escolha a pergunta que deseja consultar:",
     "results": "Estas são sugestões de perguntas cadastradas. Escolha a que corresponde à sua dúvida:",
@@ -49,12 +49,20 @@
     {
       "id": "sec10",
       "label": "📞 Canais de Suporte e Plantão"
+    },
+    {
+      "id": "saresp-digital",
+      "label": "💻 SARESP digital"
     }
   ],
   "sources": {
     "documento": {
       "title": "FAQ do Manual de Orientação do SARESP 2026 (1) · documento fornecido",
       "url": "data/fontes/faq-saresp-2026.docx"
+    },
+    "documento-digital": {
+      "title": "FAQ SARESP Digital · documento fornecido",
+      "url": "data/fontes/faq-saresp-digital.docx"
     }
   },
   "questions": [
@@ -500,6 +508,442 @@
         "dúvidas operacionais"
       ],
       "answer": "A VUNESP e a SEDUC disponibilizam canais centrais e plantões dedicados:\nCentral de Atendimento VUNESP : Telefone (11) 3874-6300 | E-mail: infosaresp@vunesp.com.br.\nPlantão Logístico VUNESP : Telefone (11) 99330-4111 | E-mail: logistica@vunesp.com.br.\nPlantão nas UREs/SMEs-Polo : Atendimento presencial e telefônico conduzido pelo Dirigente e Coordenador de Avaliação durante todo o período de prova nos três turnos (manhã, tarde e noite)."
+    },
+    {
+      "id": "digital-01",
+      "category": "saresp-digital",
+      "question": "Quem participa da Prova Digital do SARESP 2026?",
+      "answer": "Participam os estudantes dos 6º, 7º e 8º anos do Ensino Fundamental e dos Itinerários Formativos da 2ª e 3ª séries do Ensino Médio da rede estadual. A data-base para composição do público-alvo é 17/08/2026.",
+      "keywords": [
+        "público-alvo",
+        "data-base",
+        "6º ano",
+        "7º ano",
+        "8º ano",
+        "itinerário formativo",
+        "SARESP digital"
+      ],
+      "source": "documento-digital",
+      "sourceItem": "Tabela, linha 2",
+      "sourceSection": "FAQ SARESP Digital"
+    },
+    {
+      "id": "digital-02",
+      "category": "saresp-digital",
+      "question": "Quando ocorrerão as aplicações?",
+      "answer": "As datas variam conforme a série. As aplicações principais acontecem entre 06/11 e 01/12/2026. As aplicações extras ocorrerão entre 02/12 e 04/12/2026.",
+      "keywords": [
+        "cronograma",
+        "aplicação principal",
+        "aplicação extra",
+        "SARESP digital"
+      ],
+      "source": "documento-digital",
+      "sourceItem": "Tabela, linha 3",
+      "sourceSection": "FAQ SARESP Digital"
+    },
+    {
+      "id": "digital-03",
+      "category": "saresp-digital",
+      "question": "Qual é a duração da prova?",
+      "answer": "Para o Ensino Fundamental: 4 horas de prova, com permanência mínima de 1h45. Para Itinerários Formativos do Ensino Médio: 2 horas de prova, com permanência mínima de 1 hora.",
+      "keywords": [
+        "duração",
+        "permanência mínima",
+        "tempo de prova",
+        "SARESP digital"
+      ],
+      "source": "documento-digital",
+      "sourceItem": "Tabela, linha 4",
+      "sourceSection": "FAQ SARESP Digital"
+    },
+    {
+      "id": "digital-04",
+      "category": "saresp-digital",
+      "question": "Há atendimento diferenciado para estudantes elegíveis à Educação Especial?",
+      "answer": "Sim. Devem ser garantidos os recursos e apoios já utilizados no cotidiano escolar, incluindo profissional de apoio, Libras, guia-intérprete, prova ampliada, braile, audiodescrição, sala extra e até uma hora adicional de prova.",
+      "keywords": [
+        "acessibilidade",
+        "educação especial",
+        "sala extra",
+        "tempo extra",
+        "SARESP digital"
+      ],
+      "source": "documento-digital",
+      "sourceItem": "Tabela, linha 5",
+      "sourceSection": "FAQ SARESP Digital"
+    },
+    {
+      "id": "digital-05",
+      "category": "saresp-digital",
+      "question": "Quem é responsável por solicitar sala extra?",
+      "answer": "O Diretor da Escola deve solicitar a abertura da sala extra ao Coordenador de Avaliação, apresentando justificativa e necessidade do estudante.",
+      "keywords": [
+        "sala extra",
+        "diretor",
+        "coordenador de avaliação",
+        "SARESP digital"
+      ],
+      "source": "documento-digital",
+      "sourceItem": "Tabela, linha 6",
+      "sourceSection": "FAQ SARESP Digital"
+    },
+    {
+      "id": "digital-06",
+      "category": "saresp-digital",
+      "question": "Os estudantes da Educação Especial precisam estar cadastrados?",
+      "answer": "Sim. Todos os estudantes elegíveis devem estar devidamente regularizados na base de dados do cadastro de alunos.",
+      "keywords": [
+        "cadastro",
+        "base de dados",
+        "educação especial",
+        "SARESP digital"
+      ],
+      "source": "documento-digital",
+      "sourceItem": "Tabela, linha 7",
+      "sourceSection": "FAQ SARESP Digital"
+    },
+    {
+      "id": "digital-07",
+      "category": "saresp-digital",
+      "question": "Como proceder em relação ao nome social?",
+      "answer": "Deve ser respeitado integralmente. Caso o nome social não conste nos materiais, a equipe escolar deverá perguntar como o estudante deseja ser chamado e tratá-lo conforme sua solicitação.",
+      "keywords": [
+        "nome social",
+        "respeito",
+        "inclusão",
+        "SARESP digital"
+      ],
+      "source": "documento-digital",
+      "sourceItem": "Tabela, linha 8",
+      "sourceSection": "FAQ SARESP Digital"
+    },
+    {
+      "id": "digital-08",
+      "category": "saresp-digital",
+      "question": "Quem pode atuar como Professor Aplicador?",
+      "answer": "Professores com vínculo empregatício na rede de ensino, conforme critérios definidos pela Resolução nº 58 de 27/05/2026.",
+      "keywords": [
+        "professor aplicador",
+        "alocação",
+        "SARESP digital"
+      ],
+      "source": "documento-digital",
+      "sourceItem": "Tabela, linha 9",
+      "sourceSection": "FAQ SARESP Digital"
+    },
+    {
+      "id": "digital-09",
+      "category": "saresp-digital",
+      "question": "O aplicador pode aplicar prova em sua própria escola?",
+      "answer": "Não. As provas devem ser aplicadas, obrigatoriamente, por professores de escolas diferentes daquela em que lecionam.",
+      "keywords": [
+        "permuta",
+        "aplicador",
+        "outra escola",
+        "SARESP digital"
+      ],
+      "source": "documento-digital",
+      "sourceItem": "Tabela, linha 10",
+      "sourceSection": "FAQ SARESP Digital"
+    },
+    {
+      "id": "digital-10",
+      "category": "saresp-digital",
+      "question": "O que é o Termo de Compromisso e Sigilo?",
+      "answer": "É o documento que deve ser preenchido e assinado pelo Professor Aplicador antes da aplicação e devolvido à escola. Deve permanecer arquivado por 6 meses.",
+      "keywords": [
+        "termo de sigilo",
+        "arquivamento",
+        "aplicador",
+        "SARESP digital"
+      ],
+      "source": "documento-digital",
+      "sourceItem": "Tabela, linha 11",
+      "sourceSection": "FAQ SARESP Digital"
+    },
+    {
+      "id": "digital-11",
+      "category": "saresp-digital",
+      "question": "Qual a responsabilidade do Diretor em relação ao termo?",
+      "answer": "Receber os termos assinados e mantê-los arquivados na escola por seis meses.",
+      "keywords": [
+        "diretor",
+        "arquivo",
+        "termo",
+        "SARESP digital"
+      ],
+      "source": "documento-digital",
+      "sourceItem": "Tabela, linha 12",
+      "sourceSection": "FAQ SARESP Digital"
+    },
+    {
+      "id": "digital-12",
+      "category": "saresp-digital",
+      "question": "O que é a Lista de Código de Acesso?",
+      "answer": "Documento emitido pelo SIS que contém os códigos individuais necessários para os estudantes acessarem a prova digital.",
+      "keywords": [
+        "código de acesso",
+        "SIS",
+        "login",
+        "SARESP digital"
+      ],
+      "source": "documento-digital",
+      "sourceItem": "Tabela, linha 13",
+      "sourceSection": "FAQ SARESP Digital"
+    },
+    {
+      "id": "digital-13",
+      "category": "saresp-digital",
+      "question": "Quem entrega a Lista de Código de Acesso?",
+      "answer": "O Diretor entrega a lista aos aplicadores antes da aplicação.",
+      "keywords": [
+        "diretor",
+        "lista de acesso",
+        "SARESP digital"
+      ],
+      "source": "documento-digital",
+      "sourceItem": "Tabela, linha 14",
+      "sourceSection": "FAQ SARESP Digital"
+    },
+    {
+      "id": "digital-14",
+      "category": "saresp-digital",
+      "question": "O que deve ser feito com a Lista de Código de Acesso após o uso?",
+      "answer": "Ela deve ser devolvida ao Diretor da escola para descarte adequado.",
+      "keywords": [
+        "descarte",
+        "lista de acesso",
+        "SARESP digital"
+      ],
+      "source": "documento-digital",
+      "sourceItem": "Tabela, linha 15",
+      "sourceSection": "FAQ SARESP Digital"
+    },
+    {
+      "id": "digital-15",
+      "category": "saresp-digital",
+      "question": "Como o estudante acessa a prova?",
+      "answer": "O estudante informa o RA, confirma seus dados, digita o código de acesso individual e aguarda autorização do aplicador para iniciar a prova.",
+      "keywords": [
+        "acesso",
+        "RA",
+        "senha",
+        "prova digital",
+        "SARESP digital"
+      ],
+      "source": "documento-digital",
+      "sourceItem": "Tabela, linha 16",
+      "sourceSection": "FAQ SARESP Digital"
+    },
+    {
+      "id": "digital-16",
+      "category": "saresp-digital",
+      "question": "O código de acesso é o mesmo para os dois dias de aplicação?",
+      "answer": "Não. Os códigos são únicos e diferentes para cada estudante e para cada dia de prova.",
+      "keywords": [
+        "código",
+        "senha",
+        "dias de aplicação",
+        "SARESP digital"
+      ],
+      "source": "documento-digital",
+      "sourceItem": "Tabela, linha 17",
+      "sourceSection": "FAQ SARESP Digital"
+    },
+    {
+      "id": "digital-17",
+      "category": "saresp-digital",
+      "question": "O uso de celular é permitido durante a aplicação?",
+      "answer": "Não. O uso de dispositivos eletrônicos é proibido durante a aplicação. Qualquer ocorrência deve ser comunicada à direção da escola.",
+      "keywords": [
+        "celular",
+        "eletrônico",
+        "proibição",
+        "SARESP digital"
+      ],
+      "source": "documento-digital",
+      "sourceItem": "Tabela, linha 18",
+      "sourceSection": "FAQ SARESP Digital"
+    },
+    {
+      "id": "digital-18",
+      "category": "saresp-digital",
+      "question": "É permitido utilizar materiais de consulta?",
+      "answer": "Não. Não é permitida a consulta a materiais não autorizados durante a realização da prova.",
+      "keywords": [
+        "consulta",
+        "materiais",
+        "regra",
+        "SARESP digital"
+      ],
+      "source": "documento-digital",
+      "sourceItem": "Tabela, linha 19",
+      "sourceSection": "FAQ SARESP Digital"
+    },
+    {
+      "id": "digital-19",
+      "category": "saresp-digital",
+      "question": "É permitido utilizar folha de rascunho?",
+      "answer": "Sim. A escola pode fornecer uma folha de rascunho por estudante, respeitando todas as regras previstas no manual.",
+      "keywords": [
+        "rascunho",
+        "folha",
+        "controle",
+        "SARESP digital"
+      ],
+      "source": "documento-digital",
+      "sourceItem": "Tabela, linha 20",
+      "sourceSection": "FAQ SARESP Digital"
+    },
+    {
+      "id": "digital-20",
+      "category": "saresp-digital",
+      "question": "O estudante pode levar o rascunho embora?",
+      "answer": "Não. Todos os rascunhos devem ser recolhidos ao final e armazenados para descarte seguro a partir de 05/12/2026.",
+      "keywords": [
+        "rascunho",
+        "descarte",
+        "segurança",
+        "SARESP digital"
+      ],
+      "source": "documento-digital",
+      "sourceItem": "Tabela, linha 21",
+      "sourceSection": "FAQ SARESP Digital"
+    },
+    {
+      "id": "digital-21",
+      "category": "saresp-digital",
+      "question": "O que deve ser registrado no Formulário de Controle da Aplicação Digital?",
+      "answer": "Todas as ocorrências e informações relacionadas à aplicação da prova. O preenchimento é realizado pelo Professor Aplicador no SIS.",
+      "keywords": [
+        "formulário",
+        "controle",
+        "ocorrências",
+        "SARESP digital"
+      ],
+      "source": "documento-digital",
+      "sourceItem": "Tabela, linha 22",
+      "sourceSection": "FAQ SARESP Digital"
+    },
+    {
+      "id": "digital-22",
+      "category": "saresp-digital",
+      "question": "Como o Diretor acompanha o preenchimento do formulário?",
+      "answer": "Pelo SIS, no relatório nominal de alocação da escola, acompanhando a situação de preenchimento pelos aplicadores.",
+      "keywords": [
+        "acompanhamento",
+        "formulário",
+        "SIS",
+        "SARESP digital"
+      ],
+      "source": "documento-digital",
+      "sourceItem": "Tabela, linha 23",
+      "sourceSection": "FAQ SARESP Digital"
+    },
+    {
+      "id": "digital-23",
+      "category": "saresp-digital",
+      "question": "O Diretor precisa atestar a participação dos aplicadores?",
+      "answer": "Sim. O ateste é realizado no SIS e é indispensável para viabilizar o pagamento da ajuda de custo dos colaboradores.",
+      "keywords": [
+        "ateste",
+        "pagamento",
+        "colaborador",
+        "SARESP digital"
+      ],
+      "source": "documento-digital",
+      "sourceItem": "Tabela, linha 24",
+      "sourceSection": "FAQ SARESP Digital"
+    },
+    {
+      "id": "digital-24",
+      "category": "saresp-digital",
+      "question": "Quando ocorre a aplicação extra?",
+      "answer": "Em situações específicas como feriado previamente informado, falta de energia, indisponibilidade de internet, evento climático grave ou outras intercorrências que impeçam a aplicação regular.",
+      "keywords": [
+        "aplicação extra",
+        "internet",
+        "energia",
+        "SARESP digital"
+      ],
+      "source": "documento-digital",
+      "sourceItem": "Tabela, linha 25",
+      "sourceSection": "FAQ SARESP Digital"
+    },
+    {
+      "id": "digital-25",
+      "category": "saresp-digital",
+      "question": "Como solicitar aplicação extra para 6º ao 8º ano e Ensino Médio?",
+      "answer": "A solicitação deve ser realizada pela unidade escolar por meio do SIS - Sistema Integrado SARESP.",
+      "keywords": [
+        "aplicação extra",
+        "SIS",
+        "solicitação",
+        "SARESP digital"
+      ],
+      "source": "documento-digital",
+      "sourceItem": "Tabela, linha 26",
+      "sourceSection": "FAQ SARESP Digital"
+    },
+    {
+      "id": "digital-26",
+      "category": "saresp-digital",
+      "question": "Qual é a principal responsabilidade do Diretor durante a aplicação?",
+      "answer": "Garantir a organização da aplicação, disponibilizar os materiais necessários, orientar a equipe local, acompanhar os procedimentos no SIS e registrar/acompanhar eventuais ocorrências.",
+      "keywords": [
+        "diretor",
+        "gestão",
+        "aplicação",
+        "SARESP digital"
+      ],
+      "source": "documento-digital",
+      "sourceItem": "Tabela, linha 27",
+      "sourceSection": "FAQ SARESP Digital"
+    },
+    {
+      "id": "digital-27",
+      "category": "saresp-digital",
+      "question": "Qual sistema é utilizado para as ações de gestão da Prova Digital?",
+      "answer": "O SIS – Sistema Integrado SARESP.",
+      "keywords": [
+        "SIS",
+        "sistema",
+        "gestão",
+        "SARESP digital"
+      ],
+      "source": "documento-digital",
+      "sourceItem": "Tabela, linha 28",
+      "sourceSection": "FAQ SARESP Digital"
+    },
+    {
+      "id": "digital-28",
+      "category": "saresp-digital",
+      "question": "Qual portal é utilizado pelos professores aplicadores?",
+      "answer": "O Portal do Colaborador VUNESP.",
+      "keywords": [
+        "portal do colaborador",
+        "VUNESP",
+        "SARESP digital"
+      ],
+      "source": "documento-digital",
+      "sourceItem": "Tabela, linha 29",
+      "sourceSection": "FAQ SARESP Digital"
+    },
+    {
+      "id": "digital-29",
+      "category": "saresp-digital",
+      "question": "O que acontece caso o estudante precise sair da sala?",
+      "answer": "Somente em situações excepcionais, como mal-estar, solicitação dos responsáveis ou outras necessidades justificadas.",
+      "keywords": [
+        "saída",
+        "estudante",
+        "exceção",
+        "SARESP digital"
+      ],
+      "source": "documento-digital",
+      "sourceItem": "Tabela, linha 30",
+      "sourceSection": "FAQ SARESP Digital"
     }
   ]
 }

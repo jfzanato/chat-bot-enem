@@ -46,6 +46,7 @@ function sourceLink(source) {
   const link = document.createElement('a');
   link.href = source.url; link.target = '_blank'; link.rel = 'noopener noreferrer';
   if (source.url === 'data/fontes/faq-saresp-2026.docx') link.download = 'FAQ do Manual de Orientação do SARESP 2026.docx';
+  if (source.url === 'data/fontes/faq-saresp-digital.docx') link.download = 'FAQ_SARESP Digital.docx';
   link.textContent = `${source.title} ↗`; return link;
 }
 function answer(id) {
@@ -98,7 +99,7 @@ async function init() {
       ids.add(item.id);
     }
     for (const source of Object.values(data.sources)) {
-      if (source.url !== 'data/fontes/faq-saresp-2026.docx') throw new Error('Fonte inválida.');
+      if (!['data/fontes/faq-saresp-2026.docx', 'data/fontes/faq-saresp-digital.docx'].includes(source.url)) throw new Error('Fonte inválida.');
     }
     const today = new Intl.DateTimeFormat('sv-SE',{timeZone:'America/Sao_Paulo'}).format(new Date());
     if (today > data.validUntil) throw new Error('Esta base do SARESP 2026 precisa de revisão antes de novas consultas. Acesse as orientações atuais no portal da SEDUC/SP.');
