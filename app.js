@@ -42,21 +42,11 @@ function showCategory(id) {
   const items = base.questions.filter(item => item.category === id);
   choices(message(base.messages.choose), items.map(item => ({label:item.question, action: () => answer(item.id), full:true})));
 }
-function sourceLink(source) {
-  const link = document.createElement('a');
-  link.href = source.url; link.target = '_blank'; link.rel = 'noopener noreferrer';
-  if (source.url === 'data/fontes/faq-saresp-2026.docx') link.download = 'FAQ do Manual de Orientação do SARESP 2026.docx';
-  if (source.url === 'data/fontes/faq-saresp-digital.docx') link.download = 'FAQ_SARESP Digital.docx';
-  link.textContent = `${source.title} ↗`; return link;
-}
 function answer(id) {
   const item = base.questions.find(entry => entry.id === id);
   if (!item) return;
   message(item.question, true);
   const bubble = message(item.answer);
-  const source = document.createElement('div'); source.className = 'source-link';
-  source.append(`Fonte: ${item.sourceItem ? item.sourceItem + ' · ' : ''}`, sourceLink(base.sources[item.source]));
-  bubble.append(source);
   choices(bubble, [{label: 'Ver outra dúvida', action: menu}]);
 }
 function search(text) {
@@ -72,7 +62,7 @@ function search(text) {
 function restart() {
   if (!base) return;
   conversation.replaceChildren();
-  const label = document.createElement('p'); label.className = 'day-label'; label.textContent = 'FAQ DO MANUAL DE ORIENTAÇÃO · SARESP 2026'; conversation.append(label);
+  const label = document.createElement('p'); label.className = 'day-label'; label.textContent = 'SARESP E PROVÃO PAULISTA SERIADO 2026'; conversation.append(label);
   message(base.messages.welcome); menu(); query.value = '';
 }
 document.querySelector('#search-form').addEventListener('submit', event => {
@@ -84,8 +74,6 @@ document.querySelector('#search-form').addEventListener('submit', event => {
   choices(bubble, [...results.map(item => ({label:item.question,action:()=>answer(item.id),full:true})),{label:'Ver todos os assuntos',action:menu}]);
 });
 document.querySelector('#restart').addEventListener('click', restart);
-document.querySelector('#sources').addEventListener('click', () => document.querySelector('#sources-dialog').showModal());
-document.querySelector('#close-dialog').addEventListener('click', () => document.querySelector('#sources-dialog').close());
 
 async function init() {
   try {
@@ -104,10 +92,8 @@ async function init() {
     const today = new Intl.DateTimeFormat('sv-SE',{timeZone:'America/Sao_Paulo'}).format(new Date());
     if (today > data.validUntil) throw new Error('Esta base do SARESP 2026 precisa de revisão antes de novas consultas. Acesse as orientações atuais no portal da SEDUC/SP.');
     base = data;
-    query.disabled = false; document.querySelector('#send').disabled = false; document.querySelector('#sources').disabled = false;
+    query.disabled = false; document.querySelector('#send').disabled = false;
     document.querySelector('#review').textContent = `Revisado em ${data.reviewedAt.split('-').reverse().join('/')}`;
-    const list = document.querySelector('#source-list');
-    Object.values(data.sources).forEach(source=>{const li=document.createElement('li');li.append(sourceLink(source));list.append(li);});
     restart();
   } catch (error) {
     conversation.replaceChildren();

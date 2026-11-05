@@ -3,11 +3,11 @@
   "reviewedAt": "2026-11-05",
   "validUntil": "2027-12-31",
   "messages": {
-    "welcome": "Olá! Sou seu ajudante do SARESP e Provão Paulista Seriado 2026. 👋\nMinhas 55 perguntas e respostas vêm dos documentos fornecidos. Escolha um assunto ou busque uma pergunta cadastrada.",
-    "menu": "Escolha um assunto do documento:",
+    "welcome": "Olá! Sou seu ajudante do SARESP e Provão Paulista Seriado 2026. 👋\nEscolha um assunto ou busque uma pergunta cadastrada.",
+    "menu": "Escolha um assunto:",
     "choose": "Escolha a pergunta que deseja consultar:",
     "results": "Estas são sugestões de perguntas cadastradas. Escolha a que corresponde à sua dúvida:",
-    "unknown": "Não tenho uma resposta cadastrada para essa dúvida no documento fornecido. Escolha outro assunto ou consulte o FAQ em Ver fontes."
+    "unknown": "Não tenho uma resposta cadastrada para essa dúvida. Escolha outro assunto ou tente buscar com outras palavras."
   },
   "categories": [
     {
