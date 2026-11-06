@@ -107,3 +107,8 @@
 
 /* Transparencia nativa do GIF, sem mesclar as cores do personagem. */
 .character>img{mix-blend-mode:normal}
+
+/* No celular, o gesto aponta para o conteúdo à esquerda. */
+@media(max-width:680px){
+  .character>img,.character:hover>img{transform:scaleX(-1)}
+}
